@@ -1,22 +1,70 @@
-:root {
-    --title-color: #DB00FF;
-    --text-color: #F1B2CE;
-    --sub-text-color: #000028;
-    --accent-color: #ff0070;
-    --font: 'IBM Plex mono';
-    --font-size: 18px;
-    --btn-color: #ff0070;
-    --background-image: url(../images/cover-image-dark.png);
-}
-
 .page {
-    background-color: var(--main-bg, #000);
-    background-image: var(--background-image);
+    min-height: 100dvh;
+    background-color: var(--main-bg-dark);
+    color: var(--text-color-dark);
+    background-image: var(--background-image-dark);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: var(--text-color);
-    font-family: var(--font);
-    min-height: 100vh;
-    line-height: 1.4;
+}
+
+/* Header и Footer */
+.header, .footer {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.header__title, .footer__title {
+    text-shadow: 4px 4px 0 var(--accent-color-dark);
+}
+
+/* Основные секции */
+main {
+    width: 100%;
+}
+
+/* Адаптивные размеры шрифтов */
+
+/* 1024px */
+@media (max-width: 1024px) {
+    .header__title {
+        font-size: 2.5rem;
+    }
+
+    .question__section-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .question__section-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .page {
+        background-attachment: scroll;
+    }
+}
+
+/* 375px */
+@media (max-width: 375px) {
+    .header__title {
+        font-size: 1.5rem;
+    }
+
+    .question__section-title {
+        font-size: 1.25rem;
+    }
 }
