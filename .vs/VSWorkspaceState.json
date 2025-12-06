@@ -1,13 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
-    "\\.github\\workflows",
-    "\\fonts",
     "\\images",
     "\\scripts",
     "\\styles"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }

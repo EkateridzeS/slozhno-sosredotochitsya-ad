@@ -1,28 +1,16 @@
 .page.theme_dark {
-    --title-color: #DB00FF;
-    --text-color: #F1B2CE;
-    --sub-text-color: #000028;
-    --accent-color: #FF0070;
-    --btn-color: #FF0070;
-    --background-image: url(../images/cover-image-dark.png);
+  --title-color: #DB00FF;
+  --text-color: #F1B2CE;
+  --sub-text-color: #000028;
+  --accent-color: #ff0070;
+  --btn-color:#ff0070;
+  --backgroung-image: url(../images/cover-image-dark.png);
 }
 
-/* декоративна€ точка и REC Ч в тЄмной теме включены */
 .theme_dark .decorative__element {
-    display: flex;
+  display: flex;
 }
 
 .theme_dark .header__theme-menu-button:hover {
-    border: 1px solid rgba(255, 0, 112, 0.40);
-}
-
-/* тени только в тЄмной теме */
-@media (min-width: 1024px) {
-    .theme_dark .header__title {
-        text-shadow: 4px 4px 0 #FF0070;
-    }
-
-    .theme_dark .footer__title {
-        text-shadow: 4px 4px 0 #FF0070;
-    }
+  border: 1px solid rgba(255, 0, 112, 0.40);
 }
